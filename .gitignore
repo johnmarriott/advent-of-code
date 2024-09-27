@@ -1,0 +1,8 @@
+.advent
+.vscode
+.Rproj.user
+.Rhistory
+junk
+.DS_Store
+input.txt
+sample.txt
