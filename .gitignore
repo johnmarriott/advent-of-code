@@ -6,3 +6,4 @@ junk
 .DS_Store
 input.txt
 sample.txt
+__pycache__
