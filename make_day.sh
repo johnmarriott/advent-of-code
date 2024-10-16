@@ -13,4 +13,4 @@ mkdir "day$day"
 cd "day$day"
 touch input.txt
 touch sample.txt
-echo "#!/usr/bin/env python" > 1.py
+echo "#!/usr/bin/env python\n\nimport fileinput\n\nlines = [line.strip() for line in fileinput.input()]" > 1.py
