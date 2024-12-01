@@ -1,0 +1,7 @@
+$ cd /
+$ ls
+dir a
+1234 b.txt
+$ cd a
+$ ls
+1234 b.txt
