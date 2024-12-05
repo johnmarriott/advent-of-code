@@ -6,7 +6,7 @@ if [[ $# == 0 ]]
 then
   day=$( date +%d )
 else
-  day=$1
+  day=$( printf "%02d" $1 )
 fi
 
 mkdir "day$day"
