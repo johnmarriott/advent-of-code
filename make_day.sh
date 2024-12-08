@@ -1,6 +1,13 @@
 #!/bin/zsh
 
-# assume running in a year directory
+# assume running in either:
+# - aoc root directory, named advent-of-code (will cd to current year)
+# - aoc/year directory
+
+if [[ $(basename $(pwd)) == "advent-of-code" ]]
+then
+  cd "year$(date +%Y)"
+fi
 
 if [[ $# == 0 ]] 
 then
@@ -13,4 +20,4 @@ mkdir "day$day"
 cd "day$day"
 touch input.txt
 touch sample.txt
-echo "#!/usr/bin/env python\n\nimport fileinput\n\nlines = [line.strip() for line in fileinput.input()]" > 1.py
+cp ../../.template.py 1.py
