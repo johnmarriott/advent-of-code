@@ -4,7 +4,6 @@
 .Rhistory
 junk
 .DS_Store
-input.txt
-sample.txt
+*.txt
 __pycache__
 unfinished*
