@@ -22,7 +22,7 @@ if len(sys.argv) == 1:
 else:
     day = f"{int(sys.argv[1]):02d}"
 
-day_dir = f"test-day{day}"
+day_dir = f"day{day}"
 os.makedirs(day_dir, exist_ok=True)
 os.chdir(day_dir)
 
