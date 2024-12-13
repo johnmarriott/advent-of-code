@@ -1,5 +1,6 @@
+advent-of-code-data
 pandas
 psycopg2-binary
-termcolor
 shapely
-advent-of-code-data
+sympy
+termcolor
