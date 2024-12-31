@@ -37,6 +37,12 @@ if os.path.exists(template_path):
     with open(template_path, "r") as src, open(destination_path, "w") as dst:
         dst.write(src.read())
 
+# Add a .gitignore to prevent pushing this day until it's done.  For me
+# this is useful when there are partially-done problems for other days,
+# especially past years, that shouldn't be pushed yet.
+with open(".gitignore", "w") as f:
+    f.write("*\n")
+
 # populate the sample and input files from the AOC page
 try:
     puzzle = aocd.get_puzzle(day=int(day), year=int(year))
