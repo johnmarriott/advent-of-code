@@ -15,7 +15,6 @@ import numpy as np
 from scipy.optimize import linprog
 
 
-
 @dataclass()
 class Machine:
     light_diagram: tuple[int]
@@ -26,7 +25,7 @@ class Machine:
 def line_to_machine(line: str) -> Machine:
     """
     Change wiring schematics from part one, now it's a list of 0/1 vectors for the positions
-    in that schematic, instead of a list of indices.
+    in that schematic instead of a list of indices.
     """
     first_space_index = line.index(" ")
     light_diagram = tuple(0 if x == "." else 1 for x in line[1:first_space_index - 1])
